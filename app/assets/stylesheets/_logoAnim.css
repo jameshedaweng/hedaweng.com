@@ -1,0 +1,47 @@
+svg{
+	max-width: 100%;
+	max-height: 100%;
+}
+.path {
+	stroke-dasharray: 1500;
+	stroke-dashoffset: 1500;
+	animation: dash 2s ease-in-out forwards;
+	-webkit-animation: dash 2s ease-in-out forwards;
+	-moz-animation: dash 2s ease-in-out forwards;
+	-o-animation: dash 2s ease-in-out forwards;
+}
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 1500;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes dash {
+	0% {
+		stroke-dashoffset: 1500;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-moz-keyframes dash {
+	0% {
+		stroke-dashoffset: 1500;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+@-o-keyframes dash {
+	0% {
+		stroke-dashoffset: 1500;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
