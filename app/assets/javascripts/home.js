@@ -17,7 +17,7 @@ $(document).ready(function(){
 						$("#logo").stop().show();
 						setTimeout(function(){
 							$("#scr-continue").fadeTo(500, 1, function(){
-								$("body").css("overflow-y", "auto");
+								$("html, body").css("overflow-y", "auto");
 							});
 						}, 1500);
 					}, 500);
