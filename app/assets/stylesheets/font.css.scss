@@ -15,3 +15,15 @@
     src: asset-url('Larsseit-Bold.otf', font) format('opentype');
     font-weight: 500;
 }
+
+@font-face {
+    font-family: Hiragino;
+    src: asset-url('Hiragino-Light.otf', font) format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Hiragino;
+    src: asset-url('Hiragino-Bold.otf', font) format('opentype');
+    font-weight: 500;
+}
