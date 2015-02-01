@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	
+	document.ontouchstart = function(e){ e.preventDefault(); }
+
 	$(window).on('beforeunload', function(){
 		$(window).scrollTop(0);
 	});
@@ -18,6 +19,7 @@ $(document).ready(function(){
 						setTimeout(function(){
 							$("#scr-continue").fadeTo(500, 1, function(){
 								$("html, body").css("overflow-y", "auto");
+								document.ontouchstart = function(e){ return true; }
 							});
 						}, 1500);
 					}, 500);
