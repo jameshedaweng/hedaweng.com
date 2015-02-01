@@ -1,9 +1,12 @@
-$(document).load().scrollTop(0);
 $(document).ready(function(){
 	document.ontouchstart = function(e){ e.preventDefault(); }
 
 	$(window).on('beforeunload', function(){
-		$(window).scrollTop(0);
+		$("body").scrollTop(0);
+	});
+
+	$(window).on('pageshow', function(){
+		$("body").scrollTop(0);
 	});
 	
 	centerIntro();
