@@ -3,17 +3,17 @@
 
 html, body {
 	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 	overflow-y: hidden;
 } 
 
 body{
 	background: $bgGray;
-	font-family: 'Larsseit', 'Helvetiva Neue', sans-serif;
-	text-align: center;
 	margin: 0 !important;
 	padding: 0 !important;
-	-webkit-font-smoothing: antialiased;
+	font-family: 'Larsseit', 'Helvetiva Neue', sans-serif;
+	text-align: center;
 	@media (max-width: 768px){
 		font-size: 12px;
 	}
@@ -27,11 +27,9 @@ body{
 	.intro{
 		position: absolute;
 		width:100%;
-		text-align: center;
 		font-weight:500;
 		font-size: 3em;
 		line-height: 80px;
-		margin-top: 0;
 		display:none;
 	}
 	#logo{
@@ -54,7 +52,7 @@ body{
 			width:20px;
 			height:auto;
 			padding-top: 0.5em;
-			padding-bottom: 2em;
+			padding-bottom: 1.8em;
 		}
 	}
 }
