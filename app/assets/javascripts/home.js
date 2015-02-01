@@ -1,3 +1,4 @@
+$(document).load().scrollTop(0);
 $(document).ready(function(){
 	document.ontouchstart = function(e){ e.preventDefault(); }
 
