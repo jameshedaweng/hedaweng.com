@@ -7,6 +7,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'jquery-color', '~> 2.1.2'
 gem "twitter-bootstrap-rails"
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
