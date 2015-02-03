@@ -3,6 +3,8 @@ $(document).ready(function(){
 	centerIntro();
 	centerLogo();
 	introAnim();
+	fixNavbar();
+	colorAnim();
 
 	$(window).resize(function() {
 		centerLogo();
@@ -63,4 +65,43 @@ function introAnim(){
 			}, 500);
 		});
 	}, 500);
+};
+
+function fixNavbar(){
+	$(document).on("scroll", function() {
+		$("#navbar-main").toggleClass("fixed", $(document).scrollTop() >= $("#start-screen").height());
+	});
+};
+
+function colorAnim(){
+	$(document).on("scroll", function() {
+		if ($(document).scrollTop() < $("#about").offset().top){
+			$( "#navbar-main" ).stop().animate({
+				backgroundColor: "#333333"
+			}, 500);
+		}
+		if ($(document).scrollTop() >= $("#about").offset().top &&
+				$(document).scrollTop() < $("#curriculum").offset().top){
+			$( "#navbar-main" ).stop().animate({
+				backgroundColor: "#EF980B"
+			}, 500);
+		}
+		if ($(document).scrollTop() >= $("#curriculum").offset().top &&
+				$(document).scrollTop() < $("#portfolio").offset().top){
+			$( "#navbar-main" ).stop().animate({
+				backgroundColor: "#FFF8EA"
+			}, 500);
+		}
+		if ($(document).scrollTop() >= $("#portfolio").offset().top &&
+				$(document).scrollTop() < $("#contact").offset().top){
+			$( "#navbar-main" ).stop().animate({
+				backgroundColor: "#F2594B"
+			}, 500);
+		}
+		if ($(document).scrollTop() >= $("#contact").offset().top){
+			$( "#navbar-main" ).stop().animate({
+				backgroundColor: "#67497D"
+			}, 500);
+		}
+	});
 };
