@@ -1,10 +1,20 @@
+var themeAbout = "#EF980B";
+var themeCurriculum = "#F2594B";
+var themePortfolio = "#67497D";
+var themeContact = "#3E2A47";
+var bgGray = "#333333";
+var paperWhite = "#E7E1D4";
+var paperWhiteLite = "#FFF8EA";
+
 $(document).ready(function(){
 	actionsOnLoad();
 	centerIntro();
 	centerLogo();
 	introAnim();
 	fixNavbar();
-	colorAnim();
+
+	menuColorAnim();
+	menuColorHover();
 
 	$(window).resize(function() {
 		centerLogo();
@@ -69,25 +79,62 @@ function introAnim(){
 
 function fixNavbar(){
 	$(document).on("scroll", function() {
-		$("#navbar-main").toggleClass("fixed", $(document).scrollTop() >= $("#start-screen").height());
+		$("#navbar-main").toggleClass("fixed", $(document).scrollTop() >= $("#about").offset().top);
 	});
 };
 
-function colorAnim(){
+function menuColorAnim(){
 	var colorChanged = false;
 	$(document).on("scroll", function() {
 		if ($(document).scrollTop() >= $("#curriculum").offset().top && !colorChanged){
 			$( ".menu-icon-line" ).velocity({
-				stroke: "#FFF8EA"
+				stroke: paperWhiteLite
 			});
 			colorChanged = true;
 		}
 		if ($(document).scrollTop() < $("#curriculum").offset().top && colorChanged){
 			$( ".menu-icon-line" ).velocity({
-				stroke: "#EF980B"
+				stroke: themeAbout
 			});
 			colorChanged = false;
 		}
-		
+	});
+};
+
+function menuColorHover(){
+	$("#menu-icon-container").mouseenter(function(){
+		var menuBg, menuContent;
+		if ($(document).scrollTop() >= $("#curriculum").offset().top){
+			menuBg = paperWhiteLite;
+			if ($(document).scrollTop() >= $("#contact").offset().top){
+				menuContent = themeContact;
+			}
+			else if ($(document).scrollTop() >= $("#portfolio").offset().top){
+				menuContent = themePortfolio;
+			}
+			else{
+				menuContent = themeCurriculum;
+			}
+		}
+		else{
+			menuBg = themeAbout;
+			menuContent = paperWhite;
+		}
+		$(this).addClass("menu-hover");
+		$(".menu-hover #menu-icon-bg").velocity({
+			backgroundColor: menuBg,
+			opacity: 1
+		}, {
+			duration: 200
+		});
+		$(".menu-hover .menu-icon-line").velocity({
+			stroke: menuContent
+		},{
+			duration: 200
+		});
+	}).mouseleave(function(){
+		$(".menu-hover #menu-icon-bg, .menu-hover .menu-icon-line").velocity("stop");
+		$(".menu-hover #menu-icon-bg, .menu-hover .menu-icon-line").velocity("reverse");
+		$(this).removeClass("menu-hover");
 	});
 };
