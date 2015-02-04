@@ -74,34 +74,20 @@ function fixNavbar(){
 };
 
 function colorAnim(){
+	var colorChanged = false;
 	$(document).on("scroll", function() {
-		if ($(document).scrollTop() < $("#about").offset().top){
-			$( "#navbar-main" ).stop().animate({
-				backgroundColor: "#333333"
-			}, 500);
+		if ($(document).scrollTop() >= $("#curriculum").offset().top && !colorChanged){
+			$( ".menu-icon-line" ).velocity({
+				stroke: "#FFF8EA"
+			});
+			colorChanged = true;
 		}
-		if ($(document).scrollTop() >= $("#about").offset().top &&
-				$(document).scrollTop() < $("#curriculum").offset().top){
-			$( "#navbar-main" ).stop().animate({
-				backgroundColor: "#EF980B"
-			}, 500);
+		if ($(document).scrollTop() < $("#curriculum").offset().top && colorChanged){
+			$( ".menu-icon-line" ).velocity({
+				stroke: "#EF980B"
+			});
+			colorChanged = false;
 		}
-		if ($(document).scrollTop() >= $("#curriculum").offset().top &&
-				$(document).scrollTop() < $("#portfolio").offset().top){
-			$( "#navbar-main" ).stop().animate({
-				backgroundColor: "#FFF8EA"
-			}, 500);
-		}
-		if ($(document).scrollTop() >= $("#portfolio").offset().top &&
-				$(document).scrollTop() < $("#contact").offset().top){
-			$( "#navbar-main" ).stop().animate({
-				backgroundColor: "#F2594B"
-			}, 500);
-		}
-		if ($(document).scrollTop() >= $("#contact").offset().top){
-			$( "#navbar-main" ).stop().animate({
-				backgroundColor: "#67497D"
-			}, 500);
-		}
+		
 	});
 };
