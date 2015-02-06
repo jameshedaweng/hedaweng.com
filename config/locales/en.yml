@@ -20,6 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "Hello world."
+  i_am: "I am"
   site_title: "Heda Weng | Designer & Creative Coder"
   site_description: "Personal website by Heda Weng, designer & creative coder."
+  scroll_continue: "scroll to continue"
