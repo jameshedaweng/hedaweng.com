@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title><%= t(:site_title) %></title>
-	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-	<%= csrf_meta_tags %>
-	<%= favicon_link_tag "favicon.png", type: "image/png" %>
-	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0"/>
-
-	<!-- for iOS -->
-	<%= favicon_link_tag "favicon.png", rel: "apple-touch-icon", type: "image/png" %>
-	<%= favicon_link_tag "favicon.png", rel: "apple-touch-icon-precomposed", type: "image/png" %>
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-	<!-- for Android -->
-	<%= favicon_link_tag "favicon.png", rel: "icon", type: "image/png" %>
-	<meta name="mobile-web-app-capable" content="yes">
-
-	<!-- for Google -->
-	<meta name="description" content="<%= t(:site_description) %>" />
-	<meta name="keywords" content="Personal website, Heda Weng, Design" />
-	<meta name="author" content="Heda Weng" />
-	<meta name="copyright" content="Heda Weng" />
-	<meta name="application-name" content="Heda Weng" />
+	<head>
+		<title><%= t(:site_title) %></title>
+		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+		<%= csrf_meta_tags %>
+		<%= favicon_link_tag "favicon.png", type: "image/png" %>
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0"/>
 	
-	<!-- for Facebook -->  
-	<meta property="og:site_name" content="hedaweng.com" />        
-	<meta property="og:title" content="<%= t(:site_title) %>" />
-	<meta property="og:description" content="<%= t(:site_description) %>" />
-	<meta property="og:image" content="<%= image_url 'favicon.png' %>" />
-	<meta property="og:url" content="http://hedaweng.com" />
+		<!-- for iOS -->
+		<%= favicon_link_tag "favicon.png", rel: "apple-touch-icon", type: "image/png" %>
+		<%= favicon_link_tag "favicon.png", rel: "apple-touch-icon-precomposed", type: "image/png" %>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	
-	<!-- for Twitter -->          
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content="<%= t(:site_title) %>" />
-	<meta name="twitter:description" content="<%= t(:site_description) %>" />
-	<meta name="twitter:image" content="<%= image_url 'favicon.png' %>" />
-	<meta name="twitter:url" content="http://hedaweng.com" />
+		<!-- for Android -->
+		<%= favicon_link_tag "favicon.png", rel: "icon", type: "image/png" %>
+		<meta name="mobile-web-app-capable" content="yes">
 	
-</head>
-<body>
-
-<%= yield %>
-
-</body>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-59469520-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
+		<!-- for Google -->
+		<meta name="description" content="<%= t(:site_description) %>" />
+		<meta name="keywords" content="Personal website, Heda Weng, Design" />
+		<meta name="author" content="Heda Weng" />
+		<meta name="copyright" content="Heda Weng" />
+		<meta name="application-name" content="Heda Weng" />
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+			ga('create', 'UA-59469520-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	
+		<!-- for Facebook -->  
+		<meta property="og:site_name" content="hedaweng.com" />        
+		<meta property="og:title" content="<%= t(:site_title) %>" />
+		<meta property="og:description" content="<%= t(:site_description) %>" />
+		<meta property="og:image" content="<%= image_url 'favicon.png' %>" />
+		<meta property="og:url" content="http://hedaweng.com" />
+		
+		<!-- for Twitter -->          
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="<%= t(:site_title) %>" />
+		<meta name="twitter:description" content="<%= t(:site_description) %>" />
+		<meta name="twitter:image" content="<%= image_url 'favicon.png' %>" />
+		<meta name="twitter:url" content="http://hedaweng.com" />
+		
+	</head>
+	<body>
+		<%= yield %>
+	</body>
 </html>
