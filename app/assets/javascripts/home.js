@@ -106,10 +106,7 @@ function menuColorHover(){
 		var menuBg, menuContent;
 		if ($(document).scrollTop() >= $("#curriculum").offset().top){
 			menuBg = paperWhiteLite;
-			if ($(document).scrollTop() >= $("#contact").offset().top){
-				menuContent = themeContact;
-			}
-			else if ($(document).scrollTop() >= $("#portfolio").offset().top){
+			if ($(document).scrollTop() >= $("#portfolio").offset().top){
 				menuContent = themePortfolio;
 			}
 			else{
