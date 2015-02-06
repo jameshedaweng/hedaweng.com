@@ -20,6 +20,11 @@ body{
 	font-size: 16px;
 }
 
+h1{
+	font-size: 3em;
+	font-weight: 500;
+}
+
 #start-screen{
 	width: 100%;
 	height: 100vh;
@@ -96,10 +101,6 @@ body{
 	padding-top: 200px;
 	padding-bottom: 200px;
 
-	.title{
-		font-size: 3em;
-		font-weight: 500;
-	}
 	.text{
 		padding-top: 20px;
 		font-size: 1em;
@@ -114,7 +115,7 @@ body{
 
 #about{
 	background-color: $paperWhite;
-	.title{
+	h1{
 		color: $themeAbout;
 	}
 	.text{
@@ -125,7 +126,7 @@ body{
 
 #curriculum{
 	background-color: $themeCurriculum;
-	.title{
+	h1{
 		color: $paperWhiteLite;
 	}
 	.text{
@@ -135,7 +136,7 @@ body{
 
 #portfolio{
 	background-color: $themePortfolio;
-	.title{
+	h1{
 		color: $paperWhiteLite;
 	}
 	.text{
