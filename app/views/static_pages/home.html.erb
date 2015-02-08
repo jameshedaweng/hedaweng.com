@@ -22,6 +22,20 @@
 	</div>
 </div>
 
-<%= render "aboutMe" %>
-<%= render "curriculum" %>
-<%= render "portfolio" %>
+<div id="about" class="section">
+	<h1><%= t(:about_me) %></h1>
+	<br>
+	<%= render "aboutMe" %>
+</div>
+
+<div id="curriculum" class="section">
+	<h1><%= t(:curriculum) %></h1>
+	<br>
+	<%= render "curriculum" %>
+</div>
+
+<div id="portfolio" class="section">
+	<h1><%= t(:portfolio) %></h1>
+	<br>
+	<%= render "portfolio" %>
+</div>
