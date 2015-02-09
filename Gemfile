@@ -8,7 +8,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'velocityjs-rails', '~> 2.0.0'
-gem "twitter-bootstrap-rails"
+gem 'slim-rails', '~> 3.0.1'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'rails_12factor'

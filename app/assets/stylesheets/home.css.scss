@@ -23,8 +23,14 @@ body{
 
 h1{
 	font-size: 3em;
-	font-weight: 500;
+	font-weight: 300;
 	margin: 0;
+}
+
+h2{
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 5px;
 }
 
 #start-screen{
@@ -35,7 +41,6 @@ h1{
 		position: absolute;
 		width:100%;
 		font-size: 3em;
-		font-weight: 500;
 		line-height: 80px;
 		display:none;
 	}
@@ -118,6 +123,9 @@ h1{
 	h1{
 		color: $themeAbout;
 	}
+	h2{
+		color: $themeAbout;
+	}
 	.text{
 		text-align: center;
 		color: $bgGray;
@@ -129,6 +137,9 @@ h1{
 	h1{
 		color: $paperWhiteLite;
 	}
+	h2{
+		color: $paperWhiteLite;
+	}
 	.text{
 		color: $paperWhiteLite;
 	}
@@ -137,6 +148,9 @@ h1{
 #portfolio{
 	background-color: $themePortfolio;
 	h1{
+		color: $paperWhiteLite;
+	}
+	h2{
 		color: $paperWhiteLite;
 	}
 	.text{

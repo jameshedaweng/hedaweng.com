@@ -24,18 +24,27 @@
 
 <div id="about" class="section">
 	<h1><%= t(:about_me) %></h1>
+	<% if I18n.locale != :zh %>
+		<h2>关于我</h2>
+	<% end %>
 	<br>
 	<%= render "aboutMe" %>
 </div>
 
 <div id="curriculum" class="section">
 	<h1><%= t(:curriculum) %></h1>
+	<% if I18n.locale != :zh %>
+		<h2>个人简历</h2>
+	<% end %>
 	<br>
 	<%= render "curriculum" %>
 </div>
 
 <div id="portfolio" class="section">
 	<h1><%= t(:portfolio) %></h1>
+	<% if I18n.locale != :zh %>
+		<h2>作品集</h2>
+	<% end %>
 	<br>
 	<%= render "portfolio" %>
 </div>
