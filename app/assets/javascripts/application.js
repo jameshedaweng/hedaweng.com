@@ -14,4 +14,3 @@
 //= require jquery_ujs
 //= require velocity
 //= require turbolinks
-//= require_tree .

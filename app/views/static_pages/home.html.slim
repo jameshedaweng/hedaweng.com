@@ -1,10 +1,14 @@
+== content_for :head do
+  = stylesheet_link_tag "static_pages/home"
+  = javascript_include_tag "static_pages/home"
+
 div id="start-screen"
   div id="intro-0" class="intro"
     = t(:hello)
   div id="intro-1" class="intro"
     = t(:i_am)
   div id="logo" class="anim-svg"
-    = render "logoAnim"
+    = render "static_pages/modules/logoAnim"
   div id="scr-continue"
     = t(:scroll_continue)
     br
@@ -14,7 +18,7 @@ div id="start-screen-extend"
 div id="navbar-main" role="navigation"
   div id="menu-icon-container"
     div id="menu-icon-bg"
-    = render "menuIcon"
+    = render "static_pages/modules/menuIcon"
 
 div id="about" class="section"
   h1
@@ -22,7 +26,7 @@ div id="about" class="section"
   - unless I18n.locale == :zh
     h2 关于我
   br
-  = render "aboutMe"
+  = render "static_pages/partials/aboutMe"
 
 div id="curriculum" class="section"
   h1
@@ -30,7 +34,7 @@ div id="curriculum" class="section"
   - unless I18n.locale == :zh
     h2 个人简历
   br
-  = render "curriculum"
+  = render "static_pages/partials/curriculum"
 
 div id="portfolio" class="section"
   h1
@@ -38,5 +42,5 @@ div id="portfolio" class="section"
   - unless I18n.locale == :zh
     h2 作品集
   br
-  = render "portfolio"
+  = render "static_pages/partials/portfolio"
 

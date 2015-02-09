@@ -1,37 +1,5 @@
-@import "color";
-@import "font";
-
-html, body {
-	-webkit-text-size-adjust: none;
-	-webkit-font-smoothing: antialiased;
-	overflow-x: hidden;
-	overflow-y: hidden;
-} 
-
-body{
-	background: $bgGray;
-	margin: 0 !important;
-	padding: 0 !important;
-	font-family: 'Larsseit', 'PingHei', 'Helvetiva Neue', 'Arial', 'Microsoft YaHei', sans-serif;
-	font-weight: 300;
-	text-align: center;
-	@media (max-width: 768px){
-		font-size: 12.5px;
-	}
-	font-size: 16px;
-}
-
-h1{
-	font-size: 3em;
-	font-weight: 300;
-	margin: 0;
-}
-
-h2{
-	font-size: 1.5em;
-	font-weight: 300;
-	margin: 5px;
-}
+@import "modules/all";
+@import "static_pages/partials/logoAnim";
 
 #start-screen{
 	width: 100%;
@@ -102,21 +70,6 @@ h2{
 		top:0;
 	}
 }
-
-.section{
-	width:100%;
-	padding-top: 200px;
-	padding-bottom: 200px;
-
-	.text{
-		font-size: 1em;
-		line-height: 1.2em;
-		max-width: 80%;
-		margin:0 auto;
-		text-align: justify;
-	}
-}
-
 
 #about{
 	background-color: $paperWhite;
