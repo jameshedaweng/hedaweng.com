@@ -1,0 +1,39 @@
+div id="start-screen"
+  div id="intro-0" class="intro"
+    = t(:hello)
+  div id="intro-1" class="intro"
+    = t(:i_am)
+  div id="logo" class="anim-svg"
+    = render "logoAnim"
+  div id="scr-continue"
+    = t(:scroll_continue)
+    br
+    = image_tag("scrollArrow.svg")
+
+div id="start-screen-extend"
+div id="navbar-main" role="navigation"
+  div id="menu-icon-container"
+    div id="menu-icon-bg"
+    = render "menuIcon"
+
+div id="about" class="section"
+  h1
+    = t(:about_me)
+  - unless I18n.locale == :zh
+    h2 关于我
+  = render "aboutMe"
+
+div id="curriculum" class="section"
+  h1
+    = t(:curriculum)
+  - unless I18n.locale == :zh
+    h2 个人简历
+  = render "curriculum"
+
+div id="portfolio" class="section"
+  h1
+    = t(:portfolio)
+  - unless I18n.locale == :zh
+    h2 作品集
+  = render "portfolio"
+
