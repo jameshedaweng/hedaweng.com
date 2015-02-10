@@ -1,11 +1,15 @@
 @import "modules/all";
 
+html, body {
+	overflow-y: hidden;
+}
+
 .error-body{
 	width: 100%;
 	margin: 0 auto;
 	display: none;
 	img{
-		width: 800px;
+		width: 600px;
 		max-width: 80%;
 		height: auto;
 	}
