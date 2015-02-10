@@ -1,8 +1,5 @@
 == content_for :head do
   = stylesheet_link_tag "static_pages/error_pages"
 
-div class="error_body"
-  h1 Uh-oh! Internet Explorer...
-  br
-  p Internet Explorer is not supported by hedaweng.com. :-(
-  p It lacks of a lot of modern features, which are necessary for you to browse this website. To navigate this website, please download one of these modern web browsers:
+div class="error-body"
+  = render "static_pages/partials/error_ie"

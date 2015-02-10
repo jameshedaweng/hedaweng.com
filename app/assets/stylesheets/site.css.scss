@@ -4,7 +4,6 @@ html, body {
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
-	overflow-y: hidden;
 } 
 
 body{
@@ -30,18 +29,4 @@ h2{
 	font-size: 1.5em;
 	font-weight: 300;
 	margin: 5px;
-}
-
-.section{
-	width:100%;
-	padding-top: 200px;
-	padding-bottom: 200px;
-
-	.text{
-		font-size: 1em;
-		line-height: 1.2em;
-		max-width: 80%;
-		margin:0 auto;
-		text-align: justify;
-	}
 }

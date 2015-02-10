@@ -1,7 +1,13 @@
 @import "modules/all";
 
-.error_body{
-	margin-top: 200px;
-	margin-bottom: 200px;
+.error-body{
+	margin: 200px auto;
 	color: $paperWhite;
+	width: 900px;
+	max-width: 80%;
+	p{
+		text-align: justify;
+		line-height: 1.2em;
+		margin-bottom: 10px;
+	}
 }
