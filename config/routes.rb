@@ -1,6 +1,6 @@
 HedawengCom::Application.routes.draw do
   get "static_pages/home"
-  get "static_pages/ie", constraints: { subdomain: 'ie' }
+  get "ie", :to => "static_pages#ie", :constraints => { subdomain: "error" }, :as => "error_ie" 
   root :to => "static_pages#home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
