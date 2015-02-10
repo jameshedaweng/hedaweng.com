@@ -1,13 +1,11 @@
 @import "modules/all";
 
 .error-body{
-	margin: 200px auto;
-	color: $paperWhite;
-	width: 900px;
-	max-width: 80%;
-	p{
-		text-align: justify;
-		line-height: 1.2em;
-		margin-bottom: 10px;
+	width: 100%;
+	margin: 0 auto;
+	img{
+		width: 800px;
+		max-width: 80%;
+		height: auto;
 	}
 }

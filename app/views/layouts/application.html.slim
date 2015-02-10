@@ -7,10 +7,6 @@ html
     = csrf_meta_tags
     = favicon_link_tag "favicon.png", type: "image/png"
     meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0"
-
-    /![if IE]
-      javascript:
-        window.location = error_ie_path;
     
     /!for each view
     - if content_for? :head
