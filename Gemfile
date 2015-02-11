@@ -15,6 +15,7 @@ gem 'slim-rails', '~> 3.0.1'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'rails_12factor'
+gem 'thin'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
