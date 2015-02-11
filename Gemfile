@@ -23,10 +23,6 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :production, :staging do
-  gem 'rack-cors', :require => 'rack/cors'
-end
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
