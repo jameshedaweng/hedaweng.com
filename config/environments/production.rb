@@ -57,6 +57,12 @@ HedawengCom::Application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   config.action_controller.asset_host = "http://assets.hedaweng.com"
+  config.middleware.insert_before 0, "Rack::Cors" do
+    allow do
+      origins "http://assets.hedaweng.com"
+      resource '*', :headers => :any, :methods => [:get, :options]
+    end
+  end
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
