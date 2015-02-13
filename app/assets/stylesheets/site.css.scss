@@ -1,69 +1,46 @@
 @import "modules/all";
 
 html, body {
-	-webkit-text-size-adjust: none;
-	-webkit-font-smoothing: antialiased;
-	overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 } 
 
 body{
-	background: $bgGray;
-	margin: 0 !important;
-	padding: 0 !important;
-	font-family: 'Larsseit', 'PingHei', 'Helvetiva Neue', 'Arial', 'Microsoft YaHei', sans-serif;
-	font-weight: 400;
-	text-align: center;
-	@media (max-width: 768px){
-		font-size: 14px;
-	}
-	font-size: 16px;
+    background: $bgGray;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Larsseit', 'PingHei', 'Helvetiva Neue', 'Arial', 'Microsoft YaHei', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    @media (max-width: 768px){
+        font-size: 14px;
+    }
+    font-size: 16px;
 }
 
 h1{
-	font-size: 3em;
-	font-weight: 300;
-	margin: 0;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0;
 }
 
 h2{
-	font-size: 1.5em;
-	font-weight: 400;
-	margin: 5px;
-}
-
-.dark-selection{
-	::selection {
-	    color: $paperWhiteLite;
-	    background: $bgGrayLite;
-	}
-	::-moz-selection {
-	    color: $paperWhiteLite;
-	    background: $bgGrayLite;
-	}
-}
-
-.light-selection{
-	::selection {
-	    color: $bgGrayLite;
-	    background: $paperWhiteLite;
-	}
-	
-	::-moz-selection {
-	    color: $bgGrayLite;
-	    background: $paperWhiteLite;
-	}
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 5px;
 }
 
 .no-selection{
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .blank{
-	height:0.5em;
-	display: inline-block;
+    height:0.5em;
+    display: inline-block;
 }

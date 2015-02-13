@@ -6,3 +6,14 @@ $bgGray: #333333;
 $bgGrayLite: #545454;
 $paperWhite: #E7E1D4;
 $paperWhiteLite: #FFF8EA;
+
+@mixin selection($txt, $bg){
+    ::selection {
+        color: $txt;
+        background: rgba($bg, 0.99);
+    }
+    ::-moz-selection {
+        color: $txt;
+        background: rgba($bg, 0.99);
+    }
+}
