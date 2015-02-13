@@ -31,14 +31,27 @@ h2{
 	margin: 5px;
 }
 
-::selection {
-    color: $paperWhiteLite;
-    background: $paperWhite;
+.dark-selection{
+	::selection {
+	    color: $paperWhiteLite;
+	    background: $bgGrayLite;
+	}
+	::-moz-selection {
+	    color: $paperWhiteLite;
+	    background: $bgGrayLite;
+	}
 }
 
-::-moz-selection {
-    color: $paperWhiteLite;
-    background: $paperWhite;
+.light-selection{
+	::selection {
+	    color: $bgGray;
+	    background: $paperWhiteLite;
+	}
+	
+	::-moz-selection {
+	    color: $bgGray;
+	    background: $paperWhiteLite;
+	}
 }
 
 .no-selection{

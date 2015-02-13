@@ -21,7 +21,7 @@ div id="navbar-main" role="navigation" class="no-selection"
     div id="menu-icon-bg"
     = render "static_pages/modules/menuIcon"
 
-div id="about" class="section"
+div id="about" class="section dark-selection"
   h1
     = t(:about_me)
   - unless I18n.locale == :zh
@@ -29,7 +29,7 @@ div id="about" class="section"
   span class="blank no-selection"
   = render "static_pages/partials/aboutMe"
 
-div id="curriculum" class="section"
+div id="curriculum" class="section light-selection"
   h1
     = t(:curriculum)
   - unless I18n.locale == :zh
@@ -37,7 +37,7 @@ div id="curriculum" class="section"
   span class="blank no-selection"
   = render "static_pages/partials/curriculum"
 
-div id="portfolio" class="section"
+div id="portfolio" class="section light-selection"
   h1
     = t(:portfolio)
   - unless I18n.locale == :zh

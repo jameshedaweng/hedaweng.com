@@ -30,7 +30,7 @@ html, body {
 		position: absolute;
 		width: 100%;
 		bottom: 0;
-		font-size: 1.2em;
+		font-size: 1.25em;
 		display: none;
 		img{
 			width:20px;
@@ -83,7 +83,7 @@ html, body {
 
 	.text{
 		font-size: 1em;
-		line-height: 1.2em;
+		line-height: 1.25em;
 		max-width: 80%;
 		margin:0 auto;
 		text-align: justify;
@@ -101,14 +101,6 @@ html, body {
 	.text{
 		text-align: center;
 		color: $bgGrayLite;
-	}
-	::selection {
-	    color: $paperWhiteLite;
-	    background: $bgGrayLite;
-	}
-	::-moz-selection {
-	    color: $paperWhiteLite;
-	    background: $bgGrayLite;
 	}
 }
 
