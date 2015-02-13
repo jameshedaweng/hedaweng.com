@@ -12,6 +12,7 @@ html, body {
 	.intro{
 		position: absolute;
 		width:100%;
+		font-weight: 300;
 		font-size: 3em;
 		line-height: 80px;
 		display:none;
@@ -99,7 +100,15 @@ html, body {
 	}
 	.text{
 		text-align: center;
-		color: $bgGray;
+		color: $bgGrayLite;
+	}
+	::selection {
+	    color: $paperWhiteLite;
+	    background: $bgGrayLite;
+	}
+	::-moz-selection {
+	    color: $paperWhiteLite;
+	    background: $bgGrayLite;
 	}
 }
 
