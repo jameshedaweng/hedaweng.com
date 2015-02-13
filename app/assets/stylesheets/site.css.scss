@@ -44,12 +44,12 @@ h2{
 
 .light-selection{
 	::selection {
-	    color: $bgGray;
+	    color: $bgGrayLite;
 	    background: $paperWhiteLite;
 	}
 	
 	::-moz-selection {
-	    color: $bgGray;
+	    color: $bgGrayLite;
 	    background: $paperWhiteLite;
 	}
 }
