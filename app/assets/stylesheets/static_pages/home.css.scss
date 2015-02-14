@@ -93,7 +93,7 @@ html, body {
 
 #about{
 	background-color: $paperWhite;
-	@include selection($paperWhiteLite, $bgGrayLite);
+	@include selection($paperWhiteLite, $themeAbout);
 	h1{
 		color: $themeAbout;
 	}
