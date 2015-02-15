@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '4.0.2'
+gem 'rails', '~> 4.2.0'
 gem 'mongoid', '~> 4.0.0'
 gem 'bson_ext'
 gem 'sass-rails', '~> 4.0.0'
@@ -16,7 +16,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'rails_12factor'
 gem 'thin'
-gem 'rack-zippy'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
