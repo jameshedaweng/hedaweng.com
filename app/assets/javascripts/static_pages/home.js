@@ -46,6 +46,9 @@ function getLogoSize(){
 	if (window.innerHeight < imageH){
 		imageH = window.innerHeight;
 	}
+	if (window.innerWidth < 280 / 0.6){
+		imageH = 280 * 0.8;
+	}
 };
 
 function centerLogo(){
