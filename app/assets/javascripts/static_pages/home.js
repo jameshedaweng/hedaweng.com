@@ -43,9 +43,6 @@ function getLogoSize(){
 	if (window.innerWidth * 0.6 * 0.8 < imageH){
 		imageH = window.innerWidth * 0.6 * 0.8;
 	}
-	if (window.innerHeight < imageH){
-		imageH = window.innerHeight;
-	}
 	if (window.innerWidth < 280 / 0.6){
 		imageH = 280 * 0.8;
 	}
