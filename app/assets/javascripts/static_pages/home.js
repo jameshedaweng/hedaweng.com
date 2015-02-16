@@ -50,7 +50,7 @@ function getLogoSize(){
 
 function centerLogo(){
 	getLogoSize();
-	paddingTop = (window.innerHeight - imageH)/2;
+	paddingTop = (window.innerHeight - imageH)/2 - 10;
 	$("#logo").css("padding-top", paddingTop);
 };
 
