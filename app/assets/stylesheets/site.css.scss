@@ -10,8 +10,8 @@ body{
     background: $bgGray;
     margin: 0 !important;
     padding: 0 !important;
-    font-family: 'Larsseit', 'PingHei', 'Helvetiva Neue', 'Arial', 'Microsoft YaHei', sans-serif;
-    font-weight: 400;
+    font-family: 'Larsseit', 'PingFang', 'Helvetiva Neue', 'Arial', 'Microsoft YaHei', sans-serif;
+    font-weight: 300;
     text-align: center;
     @media (max-width: 480px){
         font-size: 14px;
@@ -27,7 +27,7 @@ h1{
 
 h2{
     font-size: 1.5em;
-    font-weight: 400;
+    font-weight: 300;
     margin: 5px;
 }
 

@@ -11,13 +11,25 @@
 }
 
 @font-face {
-    font-family: PingHei;
-    src: asset-url('PingHei-Light.woff', font) format('woff');
+    font-family: Larsseit;
+    src: asset-url('Larsseit-Bold.woff', font) format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: PingFang;
+    src: asset-url('PingFang-Light.woff', font) format('woff');
     font-weight: 300;
 }
 
 @font-face {
-    font-family: PingHei;
-    src: asset-url('PingHei.woff', font) format('woff');
+    font-family: PingFang;
+    src: asset-url('PingFang.woff', font) format('woff');
     font-weight: 400;
+}
+
+@font-face {
+    font-family: PingFang;
+    src: asset-url('PingFang-Bold.woff', font) format('woff');
+    font-weight: 700;
 }
